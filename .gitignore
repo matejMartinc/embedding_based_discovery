@@ -1,0 +1,6 @@
+*.npy
+*.pyc
+.idea*
+embeddings*
+datasets*
+nohup.out
