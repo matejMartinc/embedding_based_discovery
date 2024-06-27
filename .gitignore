@@ -1,3 +1,5 @@
 *.npy
 *.pyc
 .idea*
+MUSE*
+.ipynb_checkpoints
