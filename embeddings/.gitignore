@@ -2,3 +2,5 @@
 *
 # Except this file
 !.gitignore
+!cr-aligned-original.vec
+!pd-aligned-original.vec
