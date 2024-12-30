@@ -4,13 +4,18 @@
 
 Experiments were conducted with Python 3.9. First install dependencies:
 
+```
 pip install requirements.txt
-
+```
 Clone Facebook MUSE library into the project:
-
-git clone https://github.com/facebookresearch/MUSE
-
-Go to MUSE/src/utils.py file and in lines 76 and 80 change 'fastText' to 'fasttext' (i.e., change capital T to t) otherwise the code will crash
+```
+git clone https://github.com/facebookresearch/MUSE.git
+```
+Go to MUSE/src/utils.py file and in lines 76 and 80 change 'fastText' to 'fasttext' (i.e., change capital T to t) otherwise the code will crash. To do that automatically in UNIX enviornment run this:
+```
+sed -i 's/import fastText/import fasttext/' MUSE/src/utils.py
+sed -i 's/return fastText\.load_model/return fasttext.load_model/' MUSE/src/utils.py
+```
 
 ## How to use it
 
