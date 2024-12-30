@@ -24,6 +24,7 @@ RUN git clone https://github.com/facebookresearch/MUSE.git
 RUN sed -i 's/import fastText/import fasttext/' MUSE/src/utils.py
 RUN sed -i 's/return fastText\.load_model/return fasttext.load_model/' MUSE/src/utils.py
 
+
 COPY . /app
 
 EXPOSE 8888
